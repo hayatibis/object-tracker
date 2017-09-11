@@ -1,3 +1,5 @@
+  GNU nano 2.2.6                                                       File: .gitignore                                                                                                            Modified  
+
 # Prerequisites
 *.d
 
@@ -30,3 +32,7 @@
 *.exe
 *.out
 *.app
+
+data/
+model/
+outputs/
