@@ -1,0 +1,14 @@
+prefix=/home/hayati/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hayati/ffmpeg_build/lib
+includedir=/home/hayati/ffmpeg_build/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 4.7.102
+Requires: libavutil >= 55.72.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

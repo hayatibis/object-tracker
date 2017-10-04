@@ -1,0 +1,14 @@
+prefix=/home/hayati/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hayati/ffmpeg_build/lib
+includedir=/home/hayati/ffmpeg_build/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 57.7.100
+Requires: libavfilter >= 6.98.100, libswscale >= 4.7.102, libpostproc >= 54.6.100, libavformat >= 57.76.100, libavcodec >= 57.102.100, libswresample >= 2.8.100, libavutil >= 55.72.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavdevice -lXv -lX11 -lXext -Wl,--no-undefined -lSDL2 -lasound -lm -ldl -lpulse-simple -lpulse -lX11 -lXext -lXcursor -lXinerama -lXi -lXrandr -lXss -lXxf86vm -lwayland-egl -lwayland-client -lwayland-cursor -lxkbcommon -lts -lpthread -lrt -ldl -ldl -lass -lfontconfig -lenca -lm -lfribidi -lexpat -lfreetype -lz -lpng12 -Wl,--no-undefined -lSDL2 -lasound -lm -ldl -lpulse-simple -lpulse -lX11 -lXext -lXcursor -lXinerama -lXi -lXrandr -lXss -lXxf86vm -lwayland-egl -lwayland-client -lwayland-cursor -lxkbcommon -lts -lpthread -lrt -lvdpau -lX11 -lva -lva-x11 -lX11 -lva -lva-drm -lva -lxcb -lXau -lXdmcp -lxcb-shm -lxcb -lXau -lXdmcp -lxcb-xfixes -lxcb-render -lxcb-shape -lxcb -lXau -lXdmcp -lxcb-shape -lxcb -lXau -lXdmcp -lasound -Wl,--no-undefined -lSDL2 -lasound -lm -ldl -lpulse-simple -lpulse -lX11 -lXext -lXcursor -lXinerama -lXi -lXrandr -lXss -lXxf86vm -lwayland-egl -lwayland-client -lwayland-cursor -lxkbcommon -lts -lpthread -lrt -lx264 -lpthread -lm -ldl -lvpx -lm -lpthread -lvpx -lm -lpthread -lvpx -lm -lpthread -lvpx -lm -lpthread -lvorbisenc -lvorbis -lm -logg -lvorbis -lm -logg -ltheoraenc -ltheoradec -logg -lopus -lm -lopus -lm -lmp3lame -lfreetype -lz -lpng12 -lfdk-aac -lm -lass -lfontconfig -lenca -lm -lfribidi -lexpat -lfreetype -lz -lpng12 -lm -llzma -lz -pthread -pthread
+Libs.private: 
+Cflags: -I${includedir}

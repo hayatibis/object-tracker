@@ -1,0 +1,14 @@
+prefix=/home/hayati/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hayati/ffmpeg_build/lib
+includedir=/home/hayati/ffmpeg_build/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.72.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/home/hayati/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hayati/ffmpeg_build/lib
+includedir=/home/hayati/ffmpeg_build/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.8.100
+Requires: libavutil >= 55.72.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}
